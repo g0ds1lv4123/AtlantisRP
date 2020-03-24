@@ -1,0 +1,63 @@
+<html>
+	<head>
+			<link rel="stylesheet" href="css/bootstrap.min.css">
+			<link rel="stylesheet" href="css/bootstrap-extend.css">
+			<link rel="stylesheet" href="css/master_style.css">
+	</head>
+	<body class="hold-transition dark bg-img" style="background-image: url(../images/bg.jpg)">
+	
+	<div class="auth-2-outer row align-items-center h-p100 m-0">
+		<div class="auth-2">
+		  <div class="auth-logo font-size-30">
+			<b>AtlantisRP</b>
+		  </div>
+		  <!-- /.login-logo -->
+		  <div class="auth-body">
+			<p class="auth-msg" style="margin-bottom:80px;">Tworzenie postaci</p>
+
+			<form class="form-element">
+			  <div class="form-group has-feedback">
+				<input type="text" class="form-control" placeholder="Imię (John)" id="firstname">
+				<span class="ion ion-person form-control-feedback "></span>
+			  </div>
+			  <div class="form-group has-feedback">
+				<input type="text" class="form-control" placeholder="Nazwisko (Doe)" id="lastname">
+				<span class="ion ion-person form-control-feedback "></span>
+			  </div>
+			  <div class="form-group has-feedback">
+				<input type="text" class="form-control" placeholder="Data urodzenia (11/12/1980)" id="dateofbirth">
+				<span class="ion ion-locked form-control-feedback "></span>
+			  </div>
+			  <div class="form-group has-feedback">
+				<input type="text" class="form-control" placeholder="Wzrost (150)" id="height">
+				<span class="ion ion-log-in form-control-feedback "></span>
+			  </div>
+			  <div class="row">
+				<div class="col-12">
+				  <div class="checkbox">
+					<input type="radio" name="gender" id="sex1"  value="M" checked>
+					<label for="sex1">Mężczyzna</label> &nbsp;&nbsp;&nbsp;
+					<input type="radio"  name="gender" id="sex2" value="F">
+					<label for="sex2">Kobieta</label>
+				  </div>
+				</div>
+				<!-- /.col -->
+				<div class="col-12 text-center">
+				  <button type="submit" class="btn btn-block mt-10 btn-success">Utwórz postać</button>
+				</div>
+				<!-- /.col -->
+			  </div>
+			</form>
+		  </div>
+		</div>
+	
+	</div>
+	<script src="js/script.js"></script>
+	<script>
+		$('input[type="radio"]').on('change', function() {
+	 	$('input[type="radio"]').not(this).prop('checked', false);
+		});
+	</script>
+
+</body>
+</html>
